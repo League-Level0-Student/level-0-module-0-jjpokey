@@ -11,17 +11,18 @@ import org.jointheleague.graphical.robot.Robot;
 public class RobotSquare {
     public static void main(String[] args) throws Exception {
  
+  
     	// 1. Make a new Robot
-
-
+      	Robot BB8 = new Robot();
         // 3. Put the robot's pen down
-
-
+BB8.penDown();
         // 6. Make the robot move as fast as possible
-
-
+BB8.setSpeed(200);
         // 5. Do everything below here 4 times
-
+for(int a = 0; a < 4; a++) {
+	BB8.move(200);
+	BB8.turn(90);
+}
 
         //         2. Move your robot 200 pixels
 
